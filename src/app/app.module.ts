@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { LogService } from './log.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,7 +21,8 @@ import { CreateCharacterComponent } from './create-character/create-character.co
     CreateCharacterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     StarWarsService,
