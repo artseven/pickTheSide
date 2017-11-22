@@ -1,3 +1,4 @@
+import { LogService } from './log.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,7 +21,8 @@ import { StarWarsService } from './star-wars.service';
     BrowserModule
   ],
   providers: [
-    StarWarsService
+    StarWarsService,
+    LogService
   ],
   bootstrap: [AppComponent]
 })
