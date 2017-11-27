@@ -1,4 +1,4 @@
-import { StarWarsService } from '../star-wars.service';
+// import { StarWarsService } from '../star-wars.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,21 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent implements OnInit {
-  characters = [];
-  chosenList = 'all';
+  // characters = [];
+  // chosenList = 'all';
   constructor(
-    private starWarsSrv: StarWarsService
+    // private starWarsSrv: StarWarsService
   ) { }
 
   ngOnInit() {
   }
 
-  onChoose(side) {
-    this.chosenList = side;
-  }
+  // onChoose(side) {
+  //   this.chosenList = side;
+  // }
 
-  getCharacters() {
-    this.characters = this.starWarsSrv.getCharacters(this.chosenList);
-    return this.characters;
-  }
+  // getCharacters() {
+  //   this.characters = this.starWarsSrv.getCharacters(this.chosenList);
+  //   return this.characters;
+  // }
 }
