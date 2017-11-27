@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { LogService } from './log.service';
@@ -36,7 +37,8 @@ const routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpModule
   ],
   providers: [
     StarWarsService,
