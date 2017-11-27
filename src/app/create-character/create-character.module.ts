@@ -10,6 +10,7 @@ import { CreateCharacterComponent } from '../create-character/create-character.c
     CreateCharacterComponent
   ],
   imports: [
+    CommonModule,
     FormsModule,
     RouterModule.forChild([
       { path: '', component: CreateCharacterComponent }
