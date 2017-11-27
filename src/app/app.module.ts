@@ -13,17 +13,7 @@ import { ItemComponent } from './item/item.component';
 import { StarWarsService } from './star-wars.service';
 import { CreateCharacterComponent } from './create-character/create-character.component';
 import { HeaderComponent } from './header/header.component';
-
-const routes = [
-  {path: 'characters', component: TabsComponent, children: [
-    { path: '', redirectTo: 'all', pathMatch: 'full'},
-    { path: ':side', component: ListComponent}
-  ]},
-  {path: 'new-character', component: CreateCharacterComponent},
-  // wildcard path should always be last one in the list
-  {path: '**', redirectTo: '/characters'}
-];
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -37,8 +27,8 @@ const routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes),
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [
     StarWarsService,
